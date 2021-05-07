@@ -80,6 +80,6 @@ def getHtmlSourceCode(productName):
         ('as-type', 'HISTORY'),
     )
 
-    response = requests.get('https://www.flipkart.com/search', headers=headers, params=params)
+    response = requests.get('https://www.flipkart.com/search', params=params)
 
     return response.text
